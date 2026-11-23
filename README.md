@@ -90,7 +90,7 @@ Every skill gets three sub-scores, which add up to a total out of 100.
 
 **Tiers:** **S** = 95 to 100 (install-first), **A** = 85 to 94 (strong, install if it matches your stack), **B** = 75 to 84 (situational). Skills under 75 were reviewed and left out.
 
-Scores are editorial judgments made from the signals above, as of **September 2026**. They are re-scored every quarter. A 🔑 marks skills that need a vendor account or API key; all skills themselves are free to install. Full methodology and sources: [PLAYBOOK.md](PLAYBOOK.md).
+Scores are editorial judgments made from the signals above, as of **September 2026**. They are re-scored every quarter. A 🔑 marks skills that need a vendor account or API key; all skills themselves are free to install.
 
 ---
 
@@ -297,7 +297,6 @@ Columns: **P** pain /40 · **D** demand /35 · **I** ICP fit /25 · **Score** /1
 | [composition-patterns (Vercel)](https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns) | React patterns that avoid boolean-prop sprawl: compound components, lifted state, composed internals. | `npx skills add vercel-labs/agent-skills --skill composition-patterns` | 33 | 32 | 24 | **89** |
 | [modern-python (Trail of Bits)](https://officialskills.sh/trailofbits/skills/modern-python) | Modern Python tooling: uv, ruff, ty and pytest conventions. | `npx skills add trailofbits/skills --skill modern-python` | 32 | 30 | 24 | **86** |
 | [ask-questions-if-underspecified (Trail of Bits)](https://officialskills.sh/trailofbits/skills/ask-questions-if-underspecified) | Makes the agent ask for clarification on ambiguous requirements instead of guessing. | `npx skills add trailofbits/skills --skill ask-questions-if-underspecified` | 33 | 29 | 23 | **85** |
-| [caveman](https://github.com/mattpocock/skills/tree/main/skills/productivity/caveman) | Terse output mode that sharply reduces output tokens. Use when token spend is a real constraint. | `npx skills add mattpocock/skills --skill caveman` | 31 | 31 | 22 | **84** |
 | [go-agent-skills](https://github.com/eduardo-sl/go-agent-skills) | 28 Go skills: code review, concurrency safety, testing, gRPC and architecture. | see repo | 31 | 25 | 23 | **79** |
 | [claude-skills (jeffallan)](https://github.com/jeffallan/claude-skills) | 65 full-stack skills covering React, NestJS, Python, DevOps and 30+ frameworks. Install selectively. | see repo | 29 | 27 | 21 | **77** |
 | [agent-lsp](https://github.com/blackwell-systems/agent-lsp) | Semantic code intelligence: rename, refactor and impact analysis via language servers. | see repo | 31 | 23 | 22 | **76** |
@@ -450,10 +449,10 @@ Columns: **P** pain /40 · **D** demand /35 · **I** ICP fit /25 · **Score** /1
 | Skill | What it does and when to use it | Install / source | P | D | I | Score |
 |---|---|---|---|---|---|---|
 | [seo-audit](https://github.com/coreyhaines31/marketingskills/tree/main/skills/seo-audit) | Diagnoses technical and on-page SEO issues on a site. | `npx skills add coreyhaines31/marketingskills --skill seo-audit` | 32 | 29 | 24 | **85** |
-| [schema-markup](https://github.com/coreyhaines31/marketingskills/tree/main/skills/schema-markup) | Adds and fixes structured data for rich results. | `npx skills add coreyhaines31/marketingskills --skill schema-markup` | 31 | 28 | 24 | **83** |
+| [schema-markup](https://github.com/coreyhaines31/marketingskills/tree/main/skills/schema) | Adds and fixes structured data for rich results. | `npx skills add coreyhaines31/marketingskills --skill schema` | 31 | 28 | 24 | **83** |
 | [ai-seo](https://github.com/coreyhaines31/marketingskills/tree/main/skills/ai-seo) | Optimises content to appear in AI-generated answers and LLM search. | `npx skills add coreyhaines31/marketingskills --skill ai-seo` | 31 | 28 | 23 | **82** |
-| [launch-strategy](https://github.com/coreyhaines31/marketingskills/tree/main/skills/launch-strategy) | Plans product launches and feature announcements. | `npx skills add coreyhaines31/marketingskills --skill launch-strategy` | 30 | 28 | 23 | **81** |
-| [pricing-strategy](https://github.com/coreyhaines31/marketingskills/tree/main/skills/pricing-strategy) | Pricing, packaging and monetisation for SaaS. | `npx skills add coreyhaines31/marketingskills --skill pricing-strategy` | 30 | 28 | 23 | **81** |
+| [launch-strategy](https://github.com/coreyhaines31/marketingskills/tree/main/skills/launch) | Plans product launches and feature announcements. | `npx skills add coreyhaines31/marketingskills --skill launch` | 30 | 28 | 23 | **81** |
+| [pricing-strategy](https://github.com/coreyhaines31/marketingskills/tree/main/skills/pricing) | Pricing, packaging and monetisation for SaaS. | `npx skills add coreyhaines31/marketingskills --skill pricing` | 30 | 28 | 23 | **81** |
 | [programmatic-seo](https://github.com/coreyhaines31/marketingskills/tree/main/skills/programmatic-seo) | Designs SEO page templates for content at scale. Pair with Google's spam policies. | `npx skills add coreyhaines31/marketingskills --skill programmatic-seo` | 29 | 28 | 22 | **79** |
 | [copywriting](https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting) | Writes landing page, homepage and ad copy. | `npx skills add coreyhaines31/marketingskills --skill copywriting` | 28 | 28 | 22 | **78** |
 | [Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills) | Discovery, prioritisation, PRDs, roadmaps and SaaS metrics. | see repo | 28 | 27 | 22 | **77** |
@@ -499,8 +498,8 @@ These are legitimate, maintained skills that scored 75 to 84 but serve a narrowe
 | junit-5-skill (TestMu) | JUnit 5 tests in Java with Mockito. | [LambdaTest/agent-skills](https://github.com/LambdaTest/agent-skills/tree/main/junit-5-skill) | **78** |
 | wp-rest-api (WordPress) | WordPress REST routes, schema and auth. | [officialskills.sh](https://officialskills.sh/WordPress/skills/wp-rest-api) | **76** |
 | churn-prevention | Cancellation flows, save offers, failed-payment recovery. | [marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/churn-prevention) | **77** |
-| onboarding-cro | Post-signup activation and time-to-value. | [marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/onboarding-cro) | **77** |
-| competitor-alternatives | Comparison and alternative landing pages for SEO. | [marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/competitor-alternatives) | **76** |
+| onboarding-cro | Post-signup activation and time-to-value. | [marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/onboarding) | **77** |
+| competitor-alternatives | Comparison and alternative landing pages for SEO. | [marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/competitors) | **76** |
 | linear-cli-skill | Teaches the agent to use a Linear CLI instead of an MCP server. | [Valian/linear-cli-skill](https://github.com/Valian/linear-cli-skill) | **75** |
 | gh-star-history | Charts and compares GitHub star history. | [ykdojo/gh-star-history](https://github.com/ykdojo/gh-star-history) | **75** |
 | Claude Code Video Toolkit | Video production with Remotion, ElevenLabs, FFmpeg and Playwright. | [digitalsamba/claude-code-video-toolkit](https://github.com/digitalsamba/claude-code-video-toolkit) | **75** |
