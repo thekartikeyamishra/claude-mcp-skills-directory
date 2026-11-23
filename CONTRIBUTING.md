@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping keep this list trustworthy. Every skill is scored with the same rubric (see [PLAYBOOK.md](PLAYBOOK.md#6-scoring-methodology-detail)).
+Thanks for helping keep this list trustworthy. Every skill is scored with the same rubric.
 
 ## Suggest a skill
 
